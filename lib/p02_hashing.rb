@@ -4,11 +4,15 @@ end
 
 class Array
   def hash
+    self.join.to_i.hash
   end
 end
 
 class String
   def hash
+    arr = self.split("")
+    # sorted = arr.sort
+    arr.hash
   end
 end
 
